@@ -1,9 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
-## But I dont know what they do, it doesn't make sense yet
-## This creates a matrix object with the ability to solve
-## and cache the inverse of this object. It mostly just sets up and
-## holds things in little pocket universes
+## This creates a object with the ability to store and solve
+## aa matrix and its inverse. It mostly just sets up and
+## holds things in little pocket universes.
+
+## This function sets up functions to store and return a matrix and 
+## its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   ## instantiate inverse. I think this is probably a good idea?
@@ -29,7 +29,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function checks if a matrix made with the above function has 
+## a previously calculated inverse. It creates one and stores it 
+## if it does not find one.
 
 cacheSolve <- function(x, ...) {
   ## Return what currently exists as inv in the other function
